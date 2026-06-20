@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AR</title>
+  <script src="/ar/lib/three.js/build/three.min.js"></script>
+  <script src="/ar/lib/ar.js/three.js/build/ar.min.js"></script>
+  <script src="/ar/lib/three.js/examples/js/loaders/GLTFLoader.js"></script>
+  <script>
+    THREEx.ArToolkitContext.baseURL = "/ar/lib/ar.js/";
+  </script>
+  <style>
+    html,
+    body {
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+      margin: 0;
+      position: fixed;
+    }
+  </style>
+</head>
+
+<body>
+  <script src="main.js"></script>
+  <script>
+    const url = new URL(location.href);
+    const model = url.searchParams.get("model");
+    addMesh(model);
+  </script>
+</body>
+
+</html>
