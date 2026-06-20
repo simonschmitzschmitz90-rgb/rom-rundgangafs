@@ -38,6 +38,7 @@ function makeGlbViewer(containerId, modelUrl) {
   }
 
   container.addEventListener('pointerdown', (event) => {
+    if (event.target.closest('a, button')) return;
     dragging = true;
     lastX = event.clientX;
     lastY = event.clientY;

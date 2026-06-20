@@ -66,12 +66,12 @@ function render() {
 }
 
 function addMesh(modelName) {
-  const modelUrl = `/rom-rundgangafs/ar/models/${modelName}.glb`;
+  const modelUrl = `models/${modelName}.glb`;
   const markerRoot = new THREE.Group();
   scene.add(markerRoot);
   const marker = new THREEx.ArMarkerControls(arToolkitContext, markerRoot, {
     type: "pattern",
-    patternUrl: "/rom-rundgangafs/ar/lib/ar.js/data/data/patt.kanji",
+    patternUrl: "lib/ar.js/data/data/patt.kanji",
   });
 
   const smoothedMarkerRoot = new THREE.Group();

@@ -71,8 +71,14 @@ main{max-width:1100px;margin:0 auto;padding:24px 16px 40px}
   position:absolute;background:rgba(255,255,255,.88);color:#51341f;padding:8px 10px;border-radius:999px;
   font-size:.9rem;font-weight:bold;
 }
-.viewer-badge{top:12px;right:12px}
+.viewer-badge{top:58px;right:12px}
 .viewer-help{left:12px;bottom:12px}
+.viewer-vr-btn{
+  position:absolute;z-index:2;top:12px;right:12px;padding:10px 14px;border-radius:999px;
+  background:var(--accent);color:#fff;text-decoration:none;font-weight:bold;
+  box-shadow:0 4px 14px rgba(0,0,0,.2);
+}
+.viewer-vr-btn:hover,.viewer-vr-btn:focus{background:#6d350e;outline:3px solid rgba(255,255,255,.8)}
 .meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
 .meta span{
   background:#f4ece1;border-radius:999px;padding:8px 10px;color:#5d4a38;font-size:.95rem;
