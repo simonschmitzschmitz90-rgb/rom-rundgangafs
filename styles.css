@@ -45,6 +45,13 @@ main{max-width:1100px;margin:0 auto;padding:24px 16px 40px}
   background:#fff3cf;border-left:6px solid var(--accent-2);
   padding:14px 16px;border-radius:12px;
 }
+.multiple-choice{
+  margin:16px 0 0;padding:14px 16px;border:1px solid #dcc9ae;border-radius:12px;
+  display:grid;grid-template-columns:repeat(2,minmax(120px,1fr));gap:10px;background:#fffaf2;
+}
+.multiple-choice legend{font-weight:bold;padding:0 6px}
+.multiple-choice label{display:flex;align-items:center;gap:8px;cursor:pointer}
+.multiple-choice input{width:18px;height:18px;accent-color:var(--accent)}
 .station-layout{
   display:grid;
   grid-template-columns:minmax(280px,1fr) minmax(280px,1.2fr);
