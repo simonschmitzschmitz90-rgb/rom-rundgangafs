@@ -34,7 +34,7 @@
       title: 'Aquädukt', subtitle: 'Wasser für die Großstadt',
       why: 'Warum investierten die Römer so viel Arbeit in Wasserleitungen?',
       starter: 'Das Aquädukt zeigt, dass …',
-      hints: ['Aquädukte brachten Wasser in die Stadt.', 'Wasser wurde für Brunnen, Thermen und Menschen gebraucht.', 'Eine große Stadt musste gut versorgt werden.']
+      hints: ['Aquädukte brachten Wasser in die Stadt.', 'Im Modell erkennst du Bogenreihen, den offenen Wasserkanal und ein Wasserreservoir.', 'Wasser wurde für Brunnen, Thermen und Menschen gebraucht. Eine große Stadt musste gut versorgt werden.']
     },
     'baeckerei-kornspeicher.html': {
       title: 'Bäckerei und Kornspeicher', subtitle: 'Brot und Getreide für die Stadt',
