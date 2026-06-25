@@ -134,6 +134,10 @@ function makeViewer(containerId, modelName){
     return faces;
   }
 
+  function slabLine(x, y, z, w, d, color='#8c6846'){
+    return cuboid(x, y, z, w, 0.035, d, {left:color,right:color,front:color,top:color});
+  }
+
   function sceneFaces(name){
     const faces = [];
     const stone = '#d7c2a0', stone2 = '#c49d74', dark = '#ab825a', roof = '#9b5b38', grass = '#8da86a', water='#79b5d8';
@@ -183,6 +187,9 @@ function makeViewer(containerId, modelName){
       faces.push(...cuboid(-6.55,5.46,-0.87,10.7,0.07,0.35,{left:water,right:water,front:water,top:'#91c9e4'}));
       faces.push(...cuboid(-6.98,5.72,-1.12,11.6,0.18,0.12,{left:aqueductDark,right:aqueductDark,front:aqueductDark,top:'#cbb08c'}));
       faces.push(...cuboid(-6.98,5.72,-0.34,11.6,0.18,0.12,{left:aqueductDark,right:aqueductDark,front:aqueductDark,top:'#cbb08c'}));
+      for(let y=0.78;y<5.0;y+=0.46){
+        faces.push(...slabLine(-6.95,y,-1.18,11.85,0.08,'rgba(116,82,52,.55)'));
+      }
 
       faces.push(...cuboid(4.95,0,-2.15,3.15,3.05,3.6,{left:'#b78c62',right:'#c7a27a',front:'#d8c2a1',top:'#e4d0b2'}));
       faces.push(...cuboid(5.25,3.05,-1.82,2.55,0.42,2.92,{left:aqueductDark,right:aqueductDark,front:'#b89166',top:'#d3bd9c'}));
@@ -204,6 +211,8 @@ function makeViewer(containerId, modelName){
       faces.push(...cuboid(-1.15,1.92,1.58,8.25,0.22,1.05,{left:aqueductSide,right:aqueductSide,front:aqueductStone,top:'#ead8ba'}));
       faces.push(...cuboid(5.5,0.05,1.72,2.95,1.7,0.95,{left:'#b78c62',right:'#c7a27a',front:'#d6bd98',top:'#e4d0b2'}));
       faces.push(...cuboid(-2.15,0.06,1.72,1.25,1.05,0.95,{left:'#a77d58',right:'#b88f65',front:'#d3b88e',top:'#dac39d'}));
+      faces.push(...cuboid(-3.15,0.04,1.74,1.0,0.72,0.9,{left:'#9f7652',right:'#b48961',front:'#d1b48a',top:'#d9c09a'}));
+      faces.push(...arch(-3.1,0.08,1.75,0.95,0.68,0.82,'#cdb087'));
     } else if(name==='baeckerei-kornspeicher'){
       faces.push(...cuboid(-5.0,0,-3.4,4.2,2.8,4.6,{left:stone2,right:stone2,front:stone,top:'#dfc9a9'}));
       faces.push(...cuboid(-5.25,2.8,-3.65,4.7,0.35,5.1,{left:roof,right:roof,front:roof,top:roof}));
@@ -262,7 +271,42 @@ function makeViewer(containerId, modelName){
     ctx.ellipse(W()/2, H()*0.8, 140, 24, 0, 0, Math.PI*2);
     ctx.fill();
 
+    if(modelName === 'aquaedukt') drawAqueductTemplateLabels();
+
     requestAnimationFrame(draw);
+  }
+
+  function drawAqueductTemplateLabels(){
+    const labels = [
+      {text:'HAUPTKANAL (SPECUS)', p:{x:-5.85,y:5.92,z:-0.74}, dx:-135, dy:-20},
+      {text:'AQUÄDUKT-VORLAGE', p:{x:-6.1,y:0.25,z:-1.05}, dx:-95, dy:58},
+      {text:'WASSERRESERVOIR', p:{x:6.6,y:3.85,z:-1.0}, dx:68, dy:-34},
+      {text:'GRUNDABLASS', p:{x:7.9,y:0.75,z:-0.22}, dx:48, dy:34},
+      {text:'BOGENBRÜCKE', p:{x:2.5,y:1.95,z:1.75}, dx:48, dy:46},
+      {text:'TUNNELÜBERGANG', p:{x:-2.85,y:0.65,z:1.75}, dx:-120, dy:64}
+    ];
+    ctx.save();
+    ctx.font = '700 11px Georgia, serif';
+    ctx.textBaseline = 'middle';
+    labels.forEach(label => {
+      const point = project(label.p);
+      const x = point.x + label.dx;
+      const y = point.y + label.dy;
+      ctx.strokeStyle = 'rgba(73,49,29,.65)';
+      ctx.lineWidth = 1;
+      ctx.beginPath();
+      ctx.moveTo(point.x, point.y);
+      ctx.lineTo(x, y);
+      ctx.stroke();
+      ctx.fillStyle = 'rgba(255,250,240,.94)';
+      const width = ctx.measureText(label.text).width + 12;
+      ctx.fillRect(x - 6, y - 10, width, 20);
+      ctx.strokeStyle = 'rgba(73,49,29,.28)';
+      ctx.strokeRect(x - 6, y - 10, width, 20);
+      ctx.fillStyle = '#49311d';
+      ctx.fillText(label.text, x, y);
+    });
+    ctx.restore();
   }
   draw();
 }
