@@ -36,6 +36,12 @@
       starter: 'Das Aquädukt zeigt, dass …',
       hints: ['Aquädukte brachten Wasser in die Stadt.', 'Wasser wurde für Brunnen, Thermen und Menschen gebraucht.', 'Eine große Stadt musste gut versorgt werden.']
     },
+    'baeckerei-kornspeicher.html': {
+      title: 'Bäckerei und Kornspeicher', subtitle: 'Brot und Getreide für die Stadt',
+      why: 'Warum waren Bäckereien und Kornspeicher für eine Großstadt wie Rom so wichtig?',
+      starter: 'Die Bäckerei und der Kornspeicher zeigen, dass …',
+      hints: ['Getreide war eines der wichtigsten Lebensmittel in Rom.', 'In Bäckereien wurde aus Mehl Brot für viele Menschen gebacken.', 'Kornspeicher halfen dabei, Vorräte sicher zu lagern.']
+    },
     'trajansthermen.html': {
       title: 'Trajansthermen', subtitle: 'Bad, Sport und Begegnung',
       why: 'Warum waren Thermen mehr als nur ein Ort zum Baden?',
@@ -56,7 +62,7 @@
     }
   };
 
-  const order = ['kolosseum.html', 'curia-julia.html', 'forum-romanum.html', 'triumphbogen.html', 'wohnhaus.html', 'aquaedukt.html', 'trajansthermen.html', 'palatin.html', 'circus-maximus.html'];
+  const order = ['kolosseum.html', 'curia-julia.html', 'forum-romanum.html', 'triumphbogen.html', 'wohnhaus.html', 'aquaedukt.html', 'baeckerei-kornspeicher.html', 'trajansthermen.html', 'palatin.html', 'circus-maximus.html'];
   const file = location.pathname.split('/').pop() || '';
   const station = stations[file];
   if (!station) return;

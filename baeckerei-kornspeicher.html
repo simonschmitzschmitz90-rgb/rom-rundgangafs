@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bäckerei und Kornspeicher</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Bäckerei und Kornspeicher</h1>
+    <p>Brot und Getreide für die Stadt</p>
+  </header>
+  <main>
+    <section class="card station-layout">
+      <div>
+        <div class="hero-note"><strong>Arbeitsauftrag:</strong> Untersucht Backofen, Vorratsgefäße und Speicher. Warum war Getreide für die Menschen in Rom so wichtig?</div>
+        <fieldset class="multiple-choice"><legend>Zu welchem Lebensbereich der Römer gehörte dieses Gebäude?</legend><label><input type="radio" name="lebensbereich"> Politik</label><label><input type="radio" name="lebensbereich"> Macht</label><label><input type="radio" name="lebensbereich"> Freizeit</label><label><input type="radio" name="lebensbereich"> Versorgung</label></fieldset>
+        <div class="card" style="margin-top:16px">
+          <h2>Kurze Hinweise</h2>
+          <ul class="info-list"><li>Getreide war ein Grundnahrungsmittel im alten Rom.</li>
+<li>In Bäckereien wurde Mehl zu Brot verarbeitet.</li>
+<li>Kornspeicher lagerten Vorräte, damit viele Menschen versorgt werden konnten.</li></ul>
+          <div class="meta"><span>Brot</span>
+<span>Getreidevorräte</span>
+<span>Versorgung der Stadt</span></div>
+        </div>
+        <div class="card">
+          <h2>Technischer Hinweis</h2>
+          <p class="small">Diese Version läuft ohne externe 3D-Bibliotheken. Deshalb ist sie für Schul-iPads deutlich robuster. Die Darstellung ist eine einfache drehbare 3D-Illustration direkt im Browser.</p>
+          <a class="btn" href="index.html">Zur Stationsübersicht</a>
+        </div>
+      </div>
+      <div class="viewer" id="viewer">
+        <div class="viewer-badge">Offline-3D</div>
+        <div class="viewer-help">Mit dem Finger nach links/rechts ziehen</div>
+      </div>
+    </section>
+  </main>
+  <footer>Römische Schnitzeljagd – Station: Bäckerei und Kornspeicher</footer>
+  <script src="offline-models.js"></script>
+  <script>makeViewer('viewer', 'baeckerei-kornspeicher');</script>
+  <script src="station-ui.js"></script>
+</body>
+</html>

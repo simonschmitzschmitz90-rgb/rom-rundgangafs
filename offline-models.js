@@ -151,6 +151,21 @@ function makeViewer(containerId, modelName){
       }
       faces.push(...cuboid(-5.2,2.85,-0.65,9.2,0.4,1.2,{left:dark,right:dark,front:dark,top:dark}));
       faces.push(...cuboid(-5.0,3.05,-0.15,8.8,0.08,0.2,{left:water,right:water,front:water,top:water}));
+    } else if(name==='baeckerei-kornspeicher'){
+      faces.push(...cuboid(-5.0,0,-3.4,4.2,2.8,4.6,{left:stone2,right:stone2,front:stone,top:'#dfc9a9'}));
+      faces.push(...cuboid(-5.25,2.8,-3.65,4.7,0.35,5.1,{left:roof,right:roof,front:roof,top:roof}));
+      faces.push(...cuboid(-3.9,0,-3.62,1.2,1.6,0.2,{left:dark,right:dark,front:dark,top:dark}));
+      faces.push(...cuboid(-4.65,1.35,-3.66,0.55,0.65,0.16,{left:dark,right:dark,front:dark,top:dark}));
+      faces.push(...cuboid(-1.9,0,-2.8,5.0,3.8,5.2,{left:'#b98f65',right:'#c9a276',front:'#d8bd95',top:'#ead7ba'}));
+      faces.push(...cuboid(-2.15,3.8,-3.05,5.5,0.35,5.7,{left:roof,right:roof,front:roof,top:roof}));
+      for(let x=-1.1;x<=2.0;x+=1.05){
+        faces.push(...cuboid(x,0.3,-3.12,0.45,2.6,0.32,{left:dark,right:dark,front:'#8f6844',top:dark}));
+      }
+      faces.push(...cuboid(3.8,0,-2.0,1.25,2.3,1.25,{left:'#caa77d',right:'#b98f65',front:'#d7bd97',top:'#e5d2b5'}));
+      faces.push(...cuboid(3.45,2.3,-2.25,1.95,0.35,1.75,{left:roof,right:roof,front:roof,top:roof}));
+      faces.push(...cylinder(4.4,0,-0.15,0.65,1.35,'#b48a5e'));
+      faces.push(...cylinder(5.35,0,-0.05,0.55,1.05,'#c99a65'));
+      faces.push(...cylinder(3.55,0,0.05,0.48,0.95,'#d4aa73'));
     } else if(name==='trajansthermen'){
       faces.push(...cuboid(-4,0,-3,8,0.3,6,{left:dark,right:dark,front:dark,top:dark}));
       faces.push(...cuboid(-1.8,0.3,-1.8,3.6,3.2,3.6,{left:stone2,right:stone2,front:stone,top:'#ddd'}));
