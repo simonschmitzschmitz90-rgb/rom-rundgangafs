@@ -71,13 +71,13 @@
       infoText: 'In Rom mussten sehr viele Menschen jeden Tag essen. Brot war für viele Römer*innen ein wichtiges Grundnahrungsmittel. In Bäckereien wurde Getreide zu Mehl verarbeitet und daraus Brot gebacken. Dafür brauchte man Mühlen, Öfen, Arbeitskräfte und genug Getreide. Viele Menschen konnten nicht jeden Tag selbst Brot backen und kauften es deshalb. Eine Bäckerei zeigt, dass die Versorgung der Menschen in einer Großstadt gut organisiert sein musste. Sie zeigt auch, dass einfache Dinge wie Brot für das Leben in Rom sehr wichtig waren. In Kornspeichern wurde Getreide gelagert, damit es später verteilt oder verarbeitet werden konnte. Das Getreide musste trocken und sicher aufbewahrt werden. Ohne Kornspeicher hätte die Versorgung der Stadt schnell schwierig werden können.'
     },
     'trajansthermen.html': {
-      title: 'Trajansthermen',
+      title: 'Thermen',
       subtitle: 'Bad, Sport und Begegnung',
       question: 'Warum waren Thermen mehr als nur ein Ort zum Baden?',
       claim: 'Thermen waren einfach nur große Badezimmer.',
       modelHelp: 'Schau dir an, wie groß die Anlage ist und ob sie aus mehreren Bereichen besteht.',
       hintHelp: 'Achte darauf, was die Menschen dort außer Baden noch tun konnten.',
-      starter: 'Die Trajansthermen zeigen, dass …',
+      starter: 'Die Thermen zeigen, dass …',
       infoText: 'In Rom lebten so viele Menschen, dass es große öffentliche Orte für den Alltag brauchte. Thermen waren große Badeanlagen, die viele Menschen nutzen konnten. Die Menschen gingen dort nicht nur baden, sondern trafen andere, ruhten sich aus und machten Sport. In Thermen gab es verschiedene Räume, zum Beispiel für warmes und kaltes Wasser. Für solche Anlagen brauchte man viel Wasser, gute Technik und viele Arbeitskräfte. Thermen waren deshalb mehr als Badezimmer. Sie waren wichtige Orte für Körperpflege, Freizeit und Begegnung.'
     },
     'palatin.html': {
