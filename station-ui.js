@@ -109,7 +109,7 @@
 
   document.title = station.title + ' – Professor Tempus’ Rom-Rundgang';
   const header = document.querySelector('header');
-  header.innerHTML = '<a class="header-home" href="index.html">← Übersicht</a><div><span class="eyebrow">Forschungsstation</span><h1>' + station.title + '</h1><p>' + station.subtitle + '</p></div><span class="tempus-badge">⌛ Station für Professor Tempus</span>';
+  header.innerHTML = '<a class="header-home" href="index.html">← Übersicht</a><div><span class="eyebrow">Forschungsstation</span><h1>' + station.title + '</h1><p>' + station.subtitle + '</p></div><span class="tempus-badge">Station für Professor Tempus</span>';
 
   const left = document.querySelector('.station-layout > div:first-child');
   const choices = ['Freizeit und Unterhaltung', 'Politik und Macht', 'Versorgung und Technik', 'Wohnen und soziale Unterschiede', 'Gemeinschaft und Alltag'];
