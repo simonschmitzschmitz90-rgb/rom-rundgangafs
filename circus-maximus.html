@@ -32,14 +32,16 @@
         </div>
       </div>
       <div class="viewer" id="viewer">
-        <div class="viewer-badge">Offline-3D</div>
-        <div class="viewer-help">Mit dem Finger nach links/rechts ziehen</div>
+        <a class="viewer-vr-btn" href="ar/index.html?model=circus-maximus">AR-Ansicht öffnen</a>
+        <div class="viewer-help">Ziehen zum Drehen · Zwei Finger zum Zoomen</div>
       </div>
     </section>
   </main>
   <footer>Römische Schnitzeljagd – Station: Circus Maximus</footer>
-  <script src="offline-models.js"></script>
-  <script>makeViewer('viewer', 'circus-maximus');</script>
+  <script src="ar/third_party/three.js/three.min.js"></script>
+  <script src="ar/third_party/three.js/loaders/GLTFLoader.js"></script>
+  <script src="glb-viewer.js"></script>
+  <script>makeGlbViewer('viewer', 'ar/models/circus-maximus.glb');</script>
   <script src="station-ui.js"></script>
 </body>
 </html>

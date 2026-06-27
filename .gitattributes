@@ -1,0 +1,1 @@
+ar/models/*.glb filter=lfs diff=lfs merge=lfs -text

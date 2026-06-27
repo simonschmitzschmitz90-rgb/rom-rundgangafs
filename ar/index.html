@@ -3,33 +3,19 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AR</title>
-  <script src="lib/three.js/build/three.min.js"></script>
-  <script src="lib/ar.js/three.js/build/ar.min.js"></script>
-  <script src="lib/three.js/examples/js/loaders/GLTFLoader.js"></script>
-  <script>
-    THREEx.ArToolkitContext.baseURL = "lib/ar.js/";
-  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Document</title>
   <style>
-    html,
     body {
-      height: 100%;
-      width: 100%;
-      overflow: hidden;
       margin: 0;
-      position: fixed;
+      overflow: hidden;
     }
   </style>
 </head>
 
 <body>
-  <script src="main.js"></script>
-  <script>
-    const url = new URL(location.href);
-    const model = url.searchParams.get("model");
-    addMesh(model);
-  </script>
+  <script src="third_party/jsartoolkit5/build/artoolkit.min.js"></script>
+  <script type="module" src="js/main.js"></script>
 </body>
 
 </html>
