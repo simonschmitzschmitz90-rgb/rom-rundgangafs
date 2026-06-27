@@ -24,6 +24,7 @@ let arScene;
 let arController;
 let arCamera;
 let markerRoot;
+let loadingText;
 
 function resize() {
   if (!arController) {
@@ -77,6 +78,55 @@ function makeTestCube() {
   return cube;
 }
 
+function makeFloatingText(message) {
+  const canvas = document.createElement("canvas");
+  canvas.width = 1024;
+  canvas.height = 256;
+  const context = canvas.getContext("2d");
+
+  context.clearRect(0, 0, canvas.width, canvas.height);
+  context.fillStyle = "rgba(255, 250, 240, 0.94)";
+  context.strokeStyle = "rgba(90, 58, 34, 0.45)";
+  context.lineWidth = 10;
+  roundRect(context, 28, 36, canvas.width - 56, canvas.height - 72, 52);
+  context.fill();
+  context.stroke();
+
+  context.fillStyle = "#4d321f";
+  context.font = "700 58px Arial, Helvetica, sans-serif";
+  context.textAlign = "center";
+  context.textBaseline = "middle";
+  context.fillText(message, canvas.width / 2, canvas.height / 2);
+
+  const texture = new THREE.CanvasTexture(canvas);
+  texture.needsUpdate = true;
+  const material = new THREE.SpriteMaterial({
+    map: texture,
+    transparent: true,
+    depthTest: false,
+  });
+  const sprite = new THREE.Sprite(material);
+  sprite.name = "LoadingText";
+  sprite.position.set(0, 0, 8);
+  sprite.scale.set(12, 3, 1);
+  sprite.renderOrder = 10;
+  return sprite;
+}
+
+function roundRect(context, x, y, width, height, radius) {
+  context.beginPath();
+  context.moveTo(x + radius, y);
+  context.lineTo(x + width - radius, y);
+  context.quadraticCurveTo(x + width, y, x + width, y + radius);
+  context.lineTo(x + width, y + height - radius);
+  context.quadraticCurveTo(x + width, y + height, x + width - radius, y + height);
+  context.lineTo(x + radius, y + height);
+  context.quadraticCurveTo(x, y + height, x, y + height - radius);
+  context.lineTo(x, y + radius);
+  context.quadraticCurveTo(x, y, x + radius, y);
+  context.closePath();
+}
+
 async function init() {
   const name = "mapRoot";
   const path = "data/multi-barcode.dat";
@@ -102,12 +152,28 @@ async function init() {
 
     const url = new URL(location.href);
     const model = url.searchParams.get("model");
+    loadingText = makeFloatingText("3D-Modell wird geladen …");
+    markerRoot.add(loadingText);
 
     loader.load(getModelUrl(model), (gltf) => {
       const model = gltf.scene;
       model.rotation.x = Math.PI / 2;
       model.scale.setScalar(20);
       markerRoot.add(model);
+      if (loadingText) {
+        markerRoot.remove(loadingText);
+        loadingText.material.map.dispose();
+        loadingText.material.dispose();
+        loadingText = null;
+      }
+    }, undefined, () => {
+      if (loadingText) {
+        markerRoot.remove(loadingText);
+        loadingText.material.map.dispose();
+        loadingText.material.dispose();
+      }
+      loadingText = makeFloatingText("3D-Modell konnte nicht geladen werden");
+      markerRoot.add(loadingText);
     });
   });
 
