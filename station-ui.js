@@ -8,7 +8,7 @@
       modelHelp: 'Schau dir an, wie groß das Gebäude ist und wie viele Menschen dort Platz haben konnten.',
       hintHelp: 'Achte darauf, wer dort zuschaute und warum solche Spiele für den Kaiser wichtig sein konnten.',
       starter: 'Das Kolosseum zeigt, dass …',
-      hints: ['Im Kolosseum fanden Spiele und Gladiatorenkämpfe statt.', 'Viele Menschen konnten zuschauen.', 'Der Kaiser konnte sich vor dem Volk zeigen.']
+      infoText: 'Rom war in der Kaiserzeit eine riesige Stadt. Vermutlich lebten dort bis zu eine Million Menschen. Im Kolosseum fanden große Spiele und Kämpfe statt. Sehr viele Menschen konnten dort gleichzeitig zuschauen. Viele Römer*innen kamen dorthin, um sich unterhalten zu lassen. Auch der Kaiser zeigte sich dort dem Volk. Wenn er große Spiele veranstaltete, konnte er beliebt wirken und seine Macht zeigen. Das Kolosseum war also nicht nur ein Ort für Kämpfe, sondern auch ein Ort für Unterhaltung, Gemeinschaft und Macht.'
     },
     'curia-julia.html': {
       title: 'Curia Julia',
@@ -18,7 +18,7 @@
       modelHelp: 'Schau dir an, ob die Curia eher wie ein öffentlicher Platz oder wie ein besonderer Versammlungsort wirkt.',
       hintHelp: 'Achte darauf, wer sich dort traf und was dort besprochen wurde.',
       starter: 'Die Curia Julia zeigt, dass …',
-      hints: ['In der Curia traf sich der Senat.', 'Dort wurden wichtige politische Fragen besprochen.', 'Nicht alle Menschen hatten gleich viel Macht.']
+      infoText: 'Rom wurde nicht von allen Menschen gleich mitbestimmt. In der Curia Julia traf sich der Senat. Der Senat war eine Gruppe mächtiger Männer, die über wichtige politische Fragen sprach. Nicht alle Menschen in Rom durften dort mitentscheiden. Viele einfache Menschen, Frauen und versklavte Menschen hatten keinen direkten Einfluss auf solche Entscheidungen. Die Curia war deshalb ein besonderer Ort der politischen Macht. Sie zeigt, dass Macht in Rom nicht gleich verteilt war.'
     },
     'forum-romanum.html': {
       title: 'Forum Romanum',
@@ -28,7 +28,7 @@
       modelHelp: 'Schau dir an, ob das Forum wie ein einzelnes Gebäude oder eher wie ein wichtiger Platz mit vielen Gebäuden wirkt.',
       hintHelp: 'Achte darauf, was Menschen dort alles machten: kaufen, reden, handeln, feiern oder Politik erleben.',
       starter: 'Das Forum Romanum zeigt, dass …',
-      hints: ['Das Forum war ein wichtiger Treffpunkt.', 'Dort ging es um Politik, Handel, Reden und Feiern.', 'Viele Menschen kamen dort zusammen.']
+      infoText: 'Rom war das Zentrum eines großen Reiches. In der Stadt lebten viele Menschen, und viele wichtige Entscheidungen wurden dort sichtbar. Das Forum Romanum war ein wichtiger öffentlicher Platz in der Stadt. Dort kamen viele Menschen zusammen. Sie handelten, redeten, feierten und erlebten Politik. Um das Forum herum standen wichtige Gebäude. Das Forum war also nicht nur ein Marktplatz, sondern auch ein Zentrum des öffentlichen Lebens. Es zeigt, dass Politik, Handel, Religion und Begegnung in Rom eng miteinander verbunden waren.'
     },
     'triumphbogen.html': {
       title: 'Triumphbogen',
@@ -38,7 +38,7 @@
       modelHelp: 'Schau dir an, wie auffällig und sichtbar der Triumphbogen wirkt.',
       hintHelp: 'Achte darauf, woran ein Triumphbogen erinnern sollte und was er über Macht und Siege zeigte.',
       starter: 'Der Triumphbogen zeigt, dass …',
-      hints: ['Triumphbögen erinnerten an Siege.', 'Sie zeigten Macht und Erfolg.', 'Alle Menschen konnten diese Zeichen im Stadtbild sehen.']
+      infoText: 'Rom war die Hauptstadt eines großen Reiches. Siege und Macht sollten in der Stadt für alle sichtbar sein. Triumphbögen erinnerten an erfolgreiche Feldherren oder Kaiser. Sie standen gut sichtbar in der Stadt. Wer durch Rom ging, sollte die Macht und Erfolge Roms sehen. Auf manchen Triumphbögen waren Bilder oder Inschriften zu sehen. So konnten Siege dauerhaft im Stadtbild erinnert werden. Der Triumphbogen zeigt, dass Macht, Erinnerung und militärischer Erfolg öffentlich gezeigt wurden.'
     },
     'wohnhaus.html': {
       title: 'Insula',
@@ -48,7 +48,7 @@
       modelHelp: 'Schau dir an, ob das Gebäude eher wie ein großes Einzelhaus oder wie ein mehrstöckiges Wohnhaus wirkt.',
       hintHelp: 'Achte darauf, wer dort wohnte und wie viele Menschen dort leben konnten.',
       starter: 'Die Insula zeigt, dass …',
-      hints: ['Viele einfache Menschen lebten in Mietshäusern.', 'Oft lebten viele Menschen auf engem Raum.', 'Nicht alle Menschen in Rom waren reich.']
+      infoText: 'In Rom lebten sehr viele Menschen auf engem Raum. Viele einfache Menschen wohnten in Insulae, also in mehrstöckigen Mietshäusern. Oft lebten viele Menschen eng zusammen. Die Wohnungen waren meist kleiner und einfacher als die Häuser reicher Römer*innen. Manche Räume waren dunkel, laut oder unbequem. Nicht alle Menschen in Rom lebten also in prächtigen Häusern. Die Insula zeigt, dass es in Rom große Unterschiede zwischen armen und reichen Menschen gab.'
     },
     'aquaedukt.html': {
       title: 'Aquädukt',
@@ -58,7 +58,7 @@
       modelHelp: 'Schau dir an, wie Wasser über eine längere Strecke transportiert werden konnte.',
       hintHelp: 'Achte darauf, wofür eine große Stadt wie Rom viel Wasser brauchte.',
       starter: 'Das Aquädukt zeigt, dass …',
-      hints: ['Aquädukte brachten Wasser in die Stadt.', 'Im Modell erkennst du Bogenreihen, den offenen Wasserkanal und ein Wasserreservoir.', 'Wasser wurde für Brunnen, Thermen und Menschen gebraucht. Eine große Stadt musste gut versorgt werden.']
+      infoText: 'Rom war eine riesige Stadt mit sehr vielen Einwohner*innen. Für so viele Menschen brauchte man jeden Tag sehr viel Wasser. Aquädukte brachten Wasser über weite Strecken in die Stadt. Das Wasser wurde für Menschen, Brunnen, Badeanlagen und andere öffentliche Orte gebraucht. Damit das Wasser in die Stadt kam, mussten die Römer genau planen und bauen. Ohne solche Technik hätte das Leben in Rom für so viele Menschen nicht gut funktioniert. Das Aquädukt zeigt, dass Rom eine große und gut organisierte Stadt war.'
     },
     'baeckerei-kornspeicher.html': {
       title: 'Bäckerei und Kornspeicher',
@@ -68,7 +68,7 @@
       modelHelp: 'Schau dir an, welche Teile zum Backen und Lagern von Vorräten gehören könnten.',
       hintHelp: 'Achte darauf, warum viele Menschen in einer großen Stadt regelmäßig mit Nahrung versorgt werden mussten.',
       starter: 'Die Bäckerei und der Kornspeicher zeigen, dass …',
-      hints: ['Getreide war eines der wichtigsten Lebensmittel in Rom.', 'In Bäckereien wurde aus Mehl Brot für viele Menschen gebacken.', 'Kornspeicher halfen dabei, Vorräte sicher zu lagern.']
+      infoText: 'In Rom mussten sehr viele Menschen jeden Tag essen. Brot war für viele Römer*innen ein wichtiges Grundnahrungsmittel. In Bäckereien wurde Getreide zu Mehl verarbeitet und daraus Brot gebacken. Dafür brauchte man Mühlen, Öfen, Arbeitskräfte und genug Getreide. Viele Menschen konnten nicht jeden Tag selbst Brot backen und kauften es deshalb. Eine Bäckerei zeigt, dass die Versorgung der Menschen in einer Großstadt gut organisiert sein musste. Sie zeigt auch, dass einfache Dinge wie Brot für das Leben in Rom sehr wichtig waren. In Kornspeichern wurde Getreide gelagert, damit es später verteilt oder verarbeitet werden konnte. Das Getreide musste trocken und sicher aufbewahrt werden. Ohne Kornspeicher hätte die Versorgung der Stadt schnell schwierig werden können.'
     },
     'trajansthermen.html': {
       title: 'Trajansthermen',
@@ -78,7 +78,7 @@
       modelHelp: 'Schau dir an, wie groß die Anlage ist und ob sie aus mehreren Bereichen besteht.',
       hintHelp: 'Achte darauf, was die Menschen dort außer Baden noch tun konnten.',
       starter: 'Die Trajansthermen zeigen, dass …',
-      hints: ['Thermen waren große öffentliche Badeanlagen.', 'Menschen trafen sich dort zum Baden, Reden und Ausruhen.', 'Es gab verschiedene Räume, Wasserbecken und oft auch Sportmöglichkeiten.']
+      infoText: 'In Rom lebten so viele Menschen, dass es große öffentliche Orte für den Alltag brauchte. Thermen waren große Badeanlagen, die viele Menschen nutzen konnten. Die Menschen gingen dort nicht nur baden, sondern trafen andere, ruhten sich aus und machten Sport. In Thermen gab es verschiedene Räume, zum Beispiel für warmes und kaltes Wasser. Für solche Anlagen brauchte man viel Wasser, gute Technik und viele Arbeitskräfte. Thermen waren deshalb mehr als Badezimmer. Sie waren wichtige Orte für Körperpflege, Freizeit und Begegnung.'
     },
     'palatin.html': {
       title: 'Palatin',
@@ -88,7 +88,7 @@
       modelHelp: 'Schau dir an, wie groß und auffällig die Gebäude auf dem Palatin wirken.',
       hintHelp: 'Achte darauf, wer dort lebte und was dieser Ort über Macht und Reichtum zeigt.',
       starter: 'Der Palatin zeigt, dass …',
-      hints: ['Auf dem Palatin lebten mächtige und reiche Menschen.', 'Später lagen dort Kaiserpaläste.', 'Macht und Reichtum wurden sichtbar gezeigt.']
+      infoText: 'In Rom lebten sehr viele unterschiedliche Menschen. Einige waren reich und mächtig, viele andere lebten viel einfacher. Der Palatin war ein besonderer Hügel in Rom. Dort lebten sehr mächtige und reiche Menschen, später auch Kaiser. Von dort aus konnte man auf die Stadt blicken. Die großen Gebäude auf dem Palatin zeigten Reichtum und Macht. Nicht alle Menschen in Rom konnten so wohnen. Der Palatin macht deutlich, dass es in Rom große Unterschiede zwischen mächtigen, reichen und einfachen Menschen gab.'
     },
     'circus-maximus.html': {
       title: 'Circus Maximus',
@@ -98,7 +98,7 @@
       modelHelp: 'Schau dir an, wie lang und groß die Rennbahn wirkt.',
       hintHelp: 'Achte darauf, wie viele Menschen dort zusammenkommen konnten und was sie dort erlebten.',
       starter: 'Der Circus Maximus zeigt, dass …',
-      hints: ['Dort fanden Wagenrennen statt.', 'Sehr viele Menschen konnten zuschauen.', 'Wettkämpfe und Unterhaltung waren wichtig.']
+      infoText: 'Rom war eine Großstadt mit sehr vielen Menschen. Deshalb brauchte die Stadt auch große Orte, an denen viele Menschen gemeinsam etwas erleben konnten. Im Circus Maximus fanden Wagenrennen statt. Die Rennbahn war sehr lang und groß, weil sehr viele Zuschauerinnen dabei sein konnten. Die Menschen jubelten für ihre Lieblingsfahrer und erlebten gemeinsam spannende Rennen. Solche Rennen waren für viele Römerinnen ein wichtiges Freizeitereignis. Der Circus Maximus zeigt, dass Unterhaltung und gemeinsame Erlebnisse in Rom eine große Bedeutung hatten.'
     }
   };
 
@@ -117,7 +117,7 @@
   left.className = 'research-column';
   left.innerHTML = `
     <div class="book-note"><strong>Dein Auftrag:</strong> Prüfe die Behauptung und finde einen Hinweis für Professor Tempus.</div>
-    <section class="hint-card"><h2>Was du wissen solltest</h2><ul>${station.hints.map(hint => '<li>' + hint + '</li>').join('')}</ul></section>
+    <section class="hint-card"><h2>Was du wissen solltest</h2><p>${station.infoText}</p></section>
     <div class="task-stack">
       <section class="task-card why-card"><span class="task-number">1</span><div><h2>Forscherfrage</h2><p>${station.question}</p></div></section>
       <section class="task-card"><span class="task-number">2</span><div><h2>Behauptung</h2><p>${station.claim}</p></div></section>
