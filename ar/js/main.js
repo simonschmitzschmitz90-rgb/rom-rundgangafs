@@ -12,6 +12,16 @@ document.body.appendChild(renderer.domElement);
 
 const debug = false;
 const repoMediaBase = "https://media.githubusercontent.com/media/simonschmitzschmitz90-rgb/rom-rundgangafs/main/ar/models/";
+const closeButton = document.querySelector(".close-ar");
+if (closeButton) {
+  closeButton.addEventListener("click", () => {
+    if (history.length > 1) {
+      history.back();
+      return;
+    }
+    location.href = "../index.html";
+  });
+}
 
 function getModelUrl(model) {
   if (location.hostname.endsWith("github.io")) {

@@ -9,11 +9,34 @@
     body {
       margin: 0;
       overflow: hidden;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .close-ar {
+      position: fixed;
+      z-index: 20;
+      top: 14px;
+      right: 14px;
+      border: 0;
+      border-radius: 999px;
+      padding: 11px 16px;
+      background: rgba(139, 69, 19, 0.95);
+      color: #fff;
+      font-size: 16px;
+      font-weight: 800;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.28);
+      cursor: pointer;
+    }
+
+    .close-ar:focus-visible {
+      outline: 3px solid rgba(255, 255, 255, 0.9);
+      outline-offset: 3px;
     }
   </style>
 </head>
 
 <body>
+  <button class="close-ar" type="button" aria-label="AR-Ansicht schließen">Schließen</button>
   <script src="third_party/jsartoolkit5/build/artoolkit.min.js"></script>
   <script type="module" src="js/main.js"></script>
 </body>
