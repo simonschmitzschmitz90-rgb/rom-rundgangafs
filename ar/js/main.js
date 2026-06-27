@@ -11,6 +11,14 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
 
 const debug = false;
+const repoMediaBase = "https://media.githubusercontent.com/media/simonschmitzschmitz90-rgb/rom-rundgangafs/main/ar/models/";
+
+function getModelUrl(model) {
+  if (location.hostname.endsWith("github.io")) {
+    return `${repoMediaBase}${model}.glb`;
+  }
+  return `./models/${model}.glb`;
+}
 
 let arScene;
 let arController;
@@ -95,7 +103,7 @@ async function init() {
     const url = new URL(location.href);
     const model = url.searchParams.get("model");
 
-    loader.load(`./models/${model}.glb`, (gltf) => {
+    loader.load(getModelUrl(model), (gltf) => {
       const model = gltf.scene;
       model.rotation.x = Math.PI / 2;
       model.scale.setScalar(20);
