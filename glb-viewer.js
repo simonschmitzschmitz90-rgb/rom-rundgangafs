@@ -10,6 +10,11 @@ function makeGlbViewer(containerId, modelUrl) {
   renderer.setClearColor(0x000000, 0);
   container.appendChild(renderer.domElement);
 
+  const loadingNotice = document.createElement('div');
+  loadingNotice.className = 'viewer-loading';
+  loadingNotice.textContent = 'Lade 3D-Modell …';
+  container.appendChild(loadingNotice);
+
   scene.add(new THREE.HemisphereLight(0xffffff, 0x6f5842, 2));
   const keyLight = new THREE.DirectionalLight(0xffffff, 2.2);
   keyLight.position.set(4, 7, 5);
@@ -77,9 +82,9 @@ function makeGlbViewer(containerId, modelUrl) {
     pivot.add(model);
     const largestSide = Math.max(size.x, size.y, size.z);
     setDistance(largestSide / (2 * Math.tan(THREE.Math.degToRad(camera.fov / 2))) * 1.35);
+    loadingNotice.remove();
   }, undefined, () => {
-    const help = container.querySelector('.viewer-help');
-    if (help) help.textContent = 'Das 3D-Modell konnte nicht geladen werden.';
+    loadingNotice.textContent = 'Das 3D-Modell konnte nicht geladen werden.';
   });
 
   function render() {
