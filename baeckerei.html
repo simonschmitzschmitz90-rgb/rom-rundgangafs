@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bäckerei</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Bäckerei</h1>
+    <p>Brot für die Stadt</p>
+  </header>
+  <main>
+    <section class="card station-layout">
+      <div>
+        <div class="hero-note"><strong>Arbeitsauftrag:</strong> Untersucht Backofen, Mühlen und Vorratsgefäße. Warum war Brot für die Menschen in Rom so wichtig?</div>
+        <fieldset class="multiple-choice"><legend>Zu welchem Lebensbereich der Römer gehörte dieses Gebäude?</legend><label><input type="radio" name="lebensbereich"> Politik</label><label><input type="radio" name="lebensbereich"> Macht</label><label><input type="radio" name="lebensbereich"> Freizeit</label><label><input type="radio" name="lebensbereich"> Versorgung</label></fieldset>
+        <div class="card" style="margin-top:16px">
+          <h2>Kurze Hinweise</h2>
+          <ul class="info-list"><li>Brot war ein wichtiges Grundnahrungsmittel.</li>
+<li>In Bäckereien wurde Getreide gemahlen und Brot gebacken.</li>
+<li>Viele Menschen kauften Brot, statt es selbst zu backen.</li></ul>
+          <div class="meta"><span>Brot</span>
+<span>Backofen</span>
+<span>Versorgung der Stadt</span></div>
+        </div>
+        <div class="card">
+          <h2>Technischer Hinweis</h2>
+          <p class="small">Diese Version läuft ohne externe 3D-Bibliotheken. Deshalb ist sie für Schul-iPads deutlich robuster. Die Darstellung ist eine einfache drehbare 3D-Illustration direkt im Browser.</p>
+          <a class="btn" href="index.html">Zur Stationsübersicht</a>
+        </div>
+      </div>
+      <div class="viewer" id="viewer">
+        <div class="viewer-badge">Offline-3D</div>
+        <div class="viewer-help">Mit dem Finger nach links/rechts ziehen</div>
+      </div>
+    </section>
+  </main>
+  <footer>Römische Schnitzeljagd – Station: Bäckerei</footer>
+  <script src="offline-models.js"></script>
+  <script>makeViewer('viewer', 'baeckerei');</script>
+  <script src="station-ui.js"></script>
+</body>
+</html>

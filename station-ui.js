@@ -60,15 +60,25 @@
       starter: 'Das Aquädukt zeigt, dass …',
       infoText: 'Rom war eine riesige Stadt mit sehr vielen Einwohner*innen. Für so viele Menschen brauchte man jeden Tag sehr viel Wasser. Aquädukte brachten Wasser über weite Strecken in die Stadt. Das Wasser wurde für Menschen, Brunnen, Badeanlagen und andere öffentliche Orte gebraucht. Damit das Wasser in die Stadt kam, mussten die Römer genau planen und bauen. Ohne solche Technik hätte das Leben in Rom für so viele Menschen nicht gut funktioniert. Das Aquädukt zeigt, dass Rom eine große und gut organisierte Stadt war.'
     },
-    'baeckerei-kornspeicher.html': {
-      title: 'Bäckerei und Kornspeicher',
-      subtitle: 'Brot und Getreide für die Stadt',
-      question: 'Warum waren Bäckereien und Kornspeicher für eine Großstadt wie Rom so wichtig?',
-      claim: 'Brot und Getreide waren für Rom nicht besonders wichtig.',
-      modelHelp: 'Schau dir an, welche Teile zum Backen und Lagern von Vorräten gehören könnten.',
-      hintHelp: 'Achte darauf, warum viele Menschen in einer großen Stadt regelmäßig mit Nahrung versorgt werden mussten.',
-      starter: 'Die Bäckerei und der Kornspeicher zeigen, dass …',
-      infoText: 'In Rom mussten sehr viele Menschen jeden Tag essen. Brot war für viele Römer*innen ein wichtiges Grundnahrungsmittel. In Bäckereien wurde Getreide zu Mehl verarbeitet und daraus Brot gebacken. Dafür brauchte man Mühlen, Öfen, Arbeitskräfte und genug Getreide. Viele Menschen konnten nicht jeden Tag selbst Brot backen und kauften es deshalb. Eine Bäckerei zeigt, dass die Versorgung der Menschen in einer Großstadt gut organisiert sein musste. Sie zeigt auch, dass einfache Dinge wie Brot für das Leben in Rom sehr wichtig waren. In Kornspeichern wurde Getreide gelagert, damit es später verteilt oder verarbeitet werden konnte. Das Getreide musste trocken und sicher aufbewahrt werden. Ohne Kornspeicher hätte die Versorgung der Stadt schnell schwierig werden können.'
+    'baeckerei.html': {
+      title: 'Bäckerei',
+      subtitle: 'Brot für die Stadt',
+      question: 'Warum waren Bäckereien für eine Großstadt wie Rom so wichtig?',
+      claim: 'Brot war für Rom nicht besonders wichtig.',
+      modelHelp: 'Schau dir an, welche Teile zum Mahlen, Backen und Verkaufen von Brot gehören könnten.',
+      hintHelp: 'Achte darauf, warum viele Menschen in einer großen Stadt regelmäßig mit Brot versorgt werden mussten.',
+      starter: 'Die Bäckerei zeigt, dass …',
+      infoText: 'In Rom mussten sehr viele Menschen jeden Tag essen. Brot war für viele Römer*innen ein wichtiges Grundnahrungsmittel. In Bäckereien wurde Getreide zu Mehl verarbeitet und daraus Brot gebacken. Dafür brauchte man Mühlen, Öfen, Arbeitskräfte und genug Getreide. Viele Menschen konnten nicht jeden Tag selbst Brot backen und kauften es deshalb. Eine Bäckerei zeigt, dass die Versorgung der Menschen in einer Großstadt gut organisiert sein musste. Sie zeigt auch, dass einfache Dinge wie Brot für das Leben in Rom sehr wichtig waren.'
+    },
+    'kornspeicher.html': {
+      title: 'Kornspeicher',
+      subtitle: 'Getreidevorräte für Rom',
+      question: 'Warum brauchte Rom große Kornspeicher?',
+      claim: 'Getreide konnte in Rom einfach immer frisch gekauft werden. Vorräte waren nicht wichtig.',
+      modelHelp: 'Schau dir an, ob das Gebäude eher zum Wohnen oder zum Lagern großer Vorräte passt.',
+      hintHelp: 'Achte darauf, warum eine Stadt mit sehr vielen Menschen trockene und sichere Getreidelager brauchte.',
+      starter: 'Der Kornspeicher zeigt, dass …',
+      infoText: 'In Rom lebten vermutlich bis zu eine Million Menschen. Eine so große Stadt brauchte sehr viel Getreide, vor allem für Brot. Das Getreide kam nicht nur aus der Umgebung, sondern auch mit Schiffen aus anderen Teilen des Römischen Reiches. In Kornspeichern wurde Getreide gelagert, damit es später verteilt oder verarbeitet werden konnte. Das Getreide musste trocken und sicher aufbewahrt werden. Ohne Kornspeicher hätte die Versorgung der Stadt schnell schwierig werden können. Der Kornspeicher zeigt, dass Rom auf Planung, Handel und Versorgung aus dem ganzen Reich angewiesen war.'
     },
     'trajansthermen.html': {
       title: 'Thermen',
@@ -102,7 +112,7 @@
     }
   };
 
-  const order = ['kolosseum.html', 'curia-julia.html', 'forum-romanum.html', 'triumphbogen.html', 'wohnhaus.html', 'aquaedukt.html', 'baeckerei-kornspeicher.html', 'trajansthermen.html', 'palatin.html', 'circus-maximus.html'];
+  const order = ['kolosseum.html', 'curia-julia.html', 'forum-romanum.html', 'triumphbogen.html', 'wohnhaus.html', 'aquaedukt.html', 'baeckerei.html', 'kornspeicher.html', 'trajansthermen.html', 'palatin.html', 'circus-maximus.html'];
   const file = location.pathname.split('/').pop() || '';
   const station = stations[file];
   if (!station) return;

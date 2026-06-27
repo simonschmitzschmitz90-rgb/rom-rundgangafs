@@ -213,7 +213,7 @@ function makeViewer(containerId, modelName){
       faces.push(...cuboid(-2.15,0.06,1.72,1.25,1.05,0.95,{left:'#a77d58',right:'#b88f65',front:'#d3b88e',top:'#dac39d'}));
       faces.push(...cuboid(-3.15,0.04,1.74,1.0,0.72,0.9,{left:'#9f7652',right:'#b48961',front:'#d1b48a',top:'#d9c09a'}));
       faces.push(...arch(-3.1,0.08,1.75,0.95,0.68,0.82,'#cdb087'));
-    } else if(name==='baeckerei-kornspeicher'){
+    } else if(name==='baeckerei'){
       faces.push(...cuboid(-5.0,0,-3.4,4.2,2.8,4.6,{left:stone2,right:stone2,front:stone,top:'#dfc9a9'}));
       faces.push(...cuboid(-5.25,2.8,-3.65,4.7,0.35,5.1,{left:roof,right:roof,front:roof,top:roof}));
       faces.push(...cuboid(-3.9,0,-3.62,1.2,1.6,0.2,{left:dark,right:dark,front:dark,top:dark}));
@@ -228,6 +228,19 @@ function makeViewer(containerId, modelName){
       faces.push(...cylinder(4.4,0,-0.15,0.65,1.35,'#b48a5e'));
       faces.push(...cylinder(5.35,0,-0.05,0.55,1.05,'#c99a65'));
       faces.push(...cylinder(3.55,0,0.05,0.48,0.95,'#d4aa73'));
+    } else if(name==='kornspeicher'){
+      faces.push(...cuboid(-5.0,0,-3.0,10.0,0.32,6.0,{left:dark,right:dark,front:dark,top:'#c2a071'}));
+      faces.push(...cuboid(-4.6,0.32,-2.7,9.2,3.4,5.4,{left:'#b98f65',right:'#c8a277',front:'#d8bd95',top:'#ead7ba'}));
+      faces.push(...cuboid(-4.9,3.72,-3.0,9.8,0.42,6.0,{left:roof,right:roof,front:roof,top:roof}));
+      faces.push(...cuboid(-5.25,4.12,-3.25,10.5,0.32,6.5,{left:'#7f432a',right:'#8d4f32',front:'#9b5b38',top:'#a96944'}));
+      for(let x=-3.7;x<=3.7;x+=1.55){
+        faces.push(...cuboid(x,0.55,-2.92,0.45,2.3,0.28,{left:'#8f6844',right:'#8f6844',front:dark,top:dark}));
+      }
+      faces.push(...cuboid(-0.75,0.32,-2.95,1.5,1.6,0.3,{left:dark,right:dark,front:dark,top:dark}));
+      for(let x=-3.8;x<=3.8;x+=1.9){
+        faces.push(...cylinder(x,0.38,1.9,0.42,1.05,'#c99a65'));
+      }
+      faces.push(...cuboid(-4.2,1.2,2.78,8.4,0.14,0.18,{left:'#8f6844',right:'#8f6844',front:'#8f6844',top:'#8f6844'}));
     } else if(name==='trajansthermen'){
       faces.push(...cuboid(-4,0,-3,8,0.3,6,{left:dark,right:dark,front:dark,top:dark}));
       faces.push(...cuboid(-1.8,0.3,-1.8,3.6,3.2,3.6,{left:stone2,right:stone2,front:stone,top:'#ddd'}));
