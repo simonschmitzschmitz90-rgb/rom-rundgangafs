@@ -1,10 +1,6 @@
 function makeGlbViewer(containerId, modelUrl) {
   const container = document.getElementById(containerId);
   if (!container || !window.THREE) return;
-  const repoMediaBase = 'https://media.githubusercontent.com/media/simonschmitzschmitz90-rgb/rom-rundgangafs/main/';
-  const resolvedModelUrl = location.hostname.endsWith('github.io')
-    ? repoMediaBase + modelUrl.replace(/^\.?\//, '')
-    : modelUrl;
 
   const scene = new THREE.Scene();
   const camera = new THREE.PerspectiveCamera(40, 1, 0.01, 1000);
@@ -77,7 +73,7 @@ function makeGlbViewer(containerId, modelUrl) {
   container.addEventListener('touchend', () => { pinchDistance = 0; });
 
   const loader = new THREE.GLTFLoader();
-  loader.load(resolvedModelUrl, (gltf) => {
+  loader.load(modelUrl, (gltf) => {
     const model = gltf.scene;
     const box = new THREE.Box3().setFromObject(model);
     const center = box.getCenter(new THREE.Vector3());

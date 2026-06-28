@@ -11,7 +11,6 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
 
 const debug = false;
-const repoMediaBase = "https://media.githubusercontent.com/media/simonschmitzschmitz90-rgb/rom-rundgangafs/main/ar/models/";
 const closeButton = document.querySelector(".close-ar");
 if (closeButton) {
   closeButton.addEventListener("click", () => {
@@ -24,9 +23,6 @@ if (closeButton) {
 }
 
 function getModelUrl(model) {
-  if (location.hostname.endsWith("github.io")) {
-    return `${repoMediaBase}${model}.glb`;
-  }
   return `./models/${model}.glb`;
 }
 
