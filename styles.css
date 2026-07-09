@@ -101,6 +101,16 @@ header p{font-size:1.1rem}
 .eyebrow{display:block;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;font-weight:800;color:#8f4728}
 .header-home{color:#5b321f;text-decoration:none;font-weight:700;padding:10px 14px;border:1px solid rgba(143,71,40,.45);background:rgba(255,250,240,.58);border-radius:999px;white-space:nowrap}
 .tempus-badge{background:#fffaf0;color:#5b321f;border:1px solid rgba(143,71,40,.18);border-radius:999px;padding:9px 13px;font-weight:700;white-space:nowrap;box-shadow:0 4px 14px rgba(99,58,28,.08)}
+.station-start-note{
+  margin:0;
+  padding:10px 14px;
+  border:2px solid rgba(143,71,40,.35);
+  border-radius:14px;
+  background:#fff6de;
+  color:#5b321f;
+  font-weight:800;
+  box-shadow:0 6px 16px rgba(99,58,28,.08)
+}
 main{max-width:1280px;padding:26px 18px 46px}
 .station-layout{grid-template-columns:minmax(330px,.95fr) minmax(440px,1.25fr);align-items:start;gap:24px;padding:20px;background:rgba(255,253,249,.85)}
 .research-column{min-width:0}
